@@ -6,14 +6,10 @@ interface Props {
 }
 
 function TaskList({ questions }: Props) {
-	const tiposRespuesta = questions?.map((question) => question.tipoTarea);
-
-	console.log(tiposRespuesta);
-
 	return (
 		<>
 			{questions?.map((question, index) => (
-				<SingleTask question={question} index={index} />
+				<SingleTask key={index} question={question} index={index} />
 			))}
 		</>
 	);

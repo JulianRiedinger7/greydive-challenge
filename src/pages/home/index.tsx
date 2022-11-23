@@ -5,10 +5,10 @@ function Home() {
 	const { data } = useData();
 	return (
 		<div className="py-20">
-			<h1 className="text-4xl text-red-500 font-semibold text-center">
+			<h1 className="text-4xl text-red-500 font-semibold text-center mb-3">
 				Bienvenido a Greydive!
 			</h1>
-			<h2 className="text-lg text-white">
+			<h2 className="text-lg text-white text-center">
 				Selecciona el Test que quieres observar:
 			</h2>
 

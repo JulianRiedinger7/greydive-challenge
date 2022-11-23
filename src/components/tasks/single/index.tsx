@@ -6,11 +6,18 @@ interface Props {
 }
 
 function SingleTask({ question, index }: Props) {
+	const textArray = question.texto.split('\\n');
+
 	return (
-		<div className="py-4">
+		<div className="py-4 max-w-xl">
 			<div className="p-4">
 				<h2 className="text-xl font-bold">Tarea: {index + 1}</h2>
-				<p className="text-xl font-bold">{question.texto}</p>
+				{textArray.map((sentence, i) => (
+					<p key={i} className="text-xl font-bold">
+						{sentence} <br />
+					</p>
+				))}
+
 				{question.tipoTarea !== 'verbalResponse' ? (
 					<p className="my-2 font-medium text-lg">
 						Respuesta: {question.respuesta}
