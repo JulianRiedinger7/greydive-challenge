@@ -19,7 +19,7 @@ function Test() {
 				Test: Test de usabilidad en el sitio web
 			</h2>
 			<h3 className="text-2xl font-bold py-2">Testeador 1</h3>
-			<video src={info?.linkVideo} controls autoPlay muted></video>
+			<video src={info?.linkVideo} controls></video>
 
 			<h3 className="text-2xl font-bold py-4">Transcripcion</h3>
 			<div className="max-w-2xl">
